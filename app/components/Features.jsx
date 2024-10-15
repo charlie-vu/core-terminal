@@ -28,7 +28,7 @@ export default function Features() {
             <Row xs={1} lg={3} className="row-gap-4">
                 {features.map((item, index) =>
                     <Col key={`feature-${index}`}>
-                        <Card className="d-flex flex-column justify-content-between" style={{ backgroundImage: `url(${item.background})` }}>
+                        <Card className="d-flex flex-column justify-content-between border-1 border-primary rounded-5" style={{ backgroundImage: `url(${item.background})` }}>
                             <Image src={item.icon} className="icon" />
                             <div className="mt-5">
                                 <p className="fs-2">{item.name}</p>

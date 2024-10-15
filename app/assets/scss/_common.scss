@@ -68,3 +68,22 @@ a.active {
   justify-content: center !important;
   align-items: center !important;
 }
+
+.top-auto{
+  top: auto;
+}
+.bottom-auto{
+  bottom: auto;
+}
+.start-auto{
+  left: auto;
+}
+.end-auto{
+  right: auto;
+}
+
+.text-gradient {
+  background-image: linear-gradient(90deg, white, var(--bs-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
