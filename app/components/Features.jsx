@@ -24,15 +24,15 @@ export default function Features() {
         },
     ]
     return (
-        <section className="features">
-            <Row xs={1} lg={2} xl={3} className="row-gap-4">
+        <section className="features py-3">
+            <Row xs={1} lg={3} className="row-gap-4">
                 {features.map((item, index) =>
                     <Col key={`feature-${index}`}>
                         <Card className="d-flex flex-column justify-content-between" style={{ backgroundImage: `url(${item.background})` }}>
                             <Image src={item.icon} className="icon" />
-                            <div>
-                                <p className="fs-34px">{item.name}</p>
-                                <p className="fs-64px fw-500">{item.highlight}</p>
+                            <div className="mt-5">
+                                <p className="fs-2">{item.name}</p>
+                                <p className="display-5 fw-500">{item.highlight}</p>
                             </div>
                         </Card>
                     </Col>
