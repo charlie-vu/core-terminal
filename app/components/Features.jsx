@@ -24,7 +24,7 @@ export default function Features() {
         },
     ]
     return (
-        <section className="features py-3">
+        <section className="features py-3 py-lg-5">
             <Row xs={1} lg={3} className="row-gap-4">
                 {features.map((item, index) =>
                     <Col key={`feature-${index}`}>
