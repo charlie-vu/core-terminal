@@ -31,7 +31,7 @@ export default function Header() {
                             <Button variant="outline-primary px-xl-5 border-2" size="lg">Launch App</Button>
                         </div>
                     </Col>
-                    <Col className="d-block d-lg-none">
+                    <Col className="d-block d-lg-none text-end">
                         <Button variant="outline-primary border-2"><span className="dot d-inline-block me-3"></span>Launch App</Button>
                     </Col>
                 </Row>

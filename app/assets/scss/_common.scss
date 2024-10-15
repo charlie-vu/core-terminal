@@ -10,9 +10,12 @@ body {
   color: white;
 
   background-image: url("/background.png");
-  background-position: -300px right;
+  background-position: left top;
   background-repeat: no-repeat;
-  background-size: contain;
+
+  @media (min-width: 992px) {
+    background-size: contain;
+  }
 }
 
 $weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
@@ -41,6 +44,14 @@ a:hover {
 
 a.active {
   color: var(--bs-primary);
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media (min-width: 992px) {
+    $padding-x: 40px;
+  }
 }
 
 .w-fit {

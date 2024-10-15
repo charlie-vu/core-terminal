@@ -1,7 +1,9 @@
 .hero {
   padding-top: 120px;
   padding-bottom: 120px;
-  .btn {
-    padding: 20px 100px;
+  @media (min-width: 992px) {
+    .btn {
+      min-width: 360px;
+    }
   }
 }
