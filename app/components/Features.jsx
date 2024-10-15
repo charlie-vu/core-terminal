@@ -1,3 +1,5 @@
+import './Features.scss';
+
 import { Card, Col, Image, Row } from "react-bootstrap";
 
 export default function Features() {
