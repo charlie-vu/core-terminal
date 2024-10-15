@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+  white-space: pre-line;
+}
+
+body {
+  background-color: black;
+  color: white;
+
+  background-image: url("/background.png");
+  background-position: -300px right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+$weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+@each $weight in $weights {
+  .fw-#{$weight} {
+    font-weight: $weight !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.active {
+  color: var(--bs-primary);
+}
+
+.w-fit {
+  width: fit-content !important;
+}
+.w-max {
+  width: max-content !important;
+}
+.w-min {
+  width: min-content !important;
+}
+
+.flex-center {
+  justify-content: center !important;
+  align-items: center !important;
+}

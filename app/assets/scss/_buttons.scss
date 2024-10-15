@@ -1,0 +1,10 @@
+.btn-outline-primary.gradient {
+  background: linear-gradient(90deg, white, var(--bs-primary));
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text fill transparent */
+  border-width: 2px;
+  &:hover{
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: black;
+  }
+}
