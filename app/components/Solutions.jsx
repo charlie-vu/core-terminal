@@ -37,7 +37,7 @@ export default function Solutions() {
                             <h4 className="fs-1 fw-500 text-gradient vertical">{item.title}</h4>
                             <div className="mt-4">
                                 <p className="fs-5">{item.content}</p>
-                                <p className="mt-4 fs-4 text-primary"><span className="d-inline-block bg-primary rounded-circle p-2 me-3"></span>{item.category}</p>
+                                <p className="mt-4 fs-4 text-primary fw-500"><span className="dot me-3"></span>{item.category}</p>
                             </div>
                         </div>
                     </Col>
