@@ -84,7 +84,7 @@ export default function Global() {
                     </Card>
                 </Col>
                 <Col>
-                    <Card className="ct-card p-4 h-100 overflow-hidden ratio ratio-1x1 position-relative">
+                    <Card className="ct-card p-4 h-100 overflow-hidden ratio ratio-1x1 position-relative" style={{borderRadius: 50}}>
                         <Image src="/global/bg-globe.png" alt="globe" className="position-absolute end-0 bottom-0 top-auto start-auto w-auto h-auto z-index-n1" />
                     </Card>
                 </Col>
