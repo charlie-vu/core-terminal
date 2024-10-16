@@ -1,1 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+@font-face {
+  font-family: Roobert Pro;
+  font-weight: 300;
+  src: url("../fonts/RoobertPRO-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roobert Pro;
+  font-weight: 400;
+  src: url("../fonts/RoobertPRO-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roobert Pro;
+  font-weight: 500;
+  src: url("../fonts/RoobertPRO-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roobert Pro;
+  font-weight: 700;
+  src: url("../fonts/RoobertPRO-Bold.ttf") format("truetype");
+}
