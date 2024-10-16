@@ -86,4 +86,7 @@ a.active {
   background-image: linear-gradient(90deg, white, var(--bs-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &.vertical{
+    background-image: linear-gradient(white, var(--bs-primary));
+  }
 }
