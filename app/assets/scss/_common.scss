@@ -4,7 +4,6 @@
   font-family: "Roobert Pro", sans-serif;
   white-space: pre-line;
 }
-
 body {
   background-color: black;
   color: white;
@@ -44,14 +43,6 @@ a:hover {
 
 a.active {
   color: var(--bs-primary);
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  @media (min-width: 992px) {
-    $padding-x: 40px;
-  }
 }
 
 .w-fit {
@@ -117,4 +108,9 @@ a.active {
 
 .cursor-pointer {
   cursor: pointer !important;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
 }

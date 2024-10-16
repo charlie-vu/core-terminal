@@ -1,0 +1,31 @@
+// pixel-perfect figma
+@media (min-width: 1800px) {
+  html {
+    font-size: 24px;
+  }
+  .container {
+    max-width: 1675px;
+  }
+  .column-gap-4 {
+    column-gap: 48px !important;
+  }
+
+  .header {
+    margin-top: 81px !important;
+  }
+  .hero {
+    padding-top: 214px !important;
+    padding-bottom: 226px !important;
+    .hero-heading {
+      max-width: 1080px;
+    }
+    .plus {
+      display: block !important;
+    }
+  }
+}
+.hero {
+  .plus {
+    display: none;
+  }
+}

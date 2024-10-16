@@ -19,16 +19,17 @@ export default function Header() {
                 <Row className="align-items-center">
                     <Col xs={6} lg={4}>
                         <Link href="/">
-                            <Image className="w-100" src="/logo/logo-text.png" alt="core-terminal" />
+                            <Image className="w-100 logo-text" src="/logo/logo-text.png" alt="core-terminal" />
                         </Link>
                     </Col>
                     <Col className="d-none d-lg-block">
-                        <div className="d-flex fs-5 column-gap-5 align-items-center justify-content-end">
+                        <div className="d-flex column-gap-4 align-items-center justify-content-end">
                             <Link className="nav-item" href="/">Company</Link>
                             <Link className="nav-item" href="#product">Product</Link>
-                            <Link className="nav-item" href="#">Contact</Link>
+                            <Link className="nav-item" href="#tech">Technology</Link>
+                            <Link className="nav-item" href="#contact">Contact</Link>
                             <div className="dot"></div>
-                            <Button variant="outline-primary px-xl-5 border-2" size="lg">Launch App</Button>
+                            <Button variant="outline-primary py-2 px-4 px-xl-5 border-2">Launch App</Button>
                         </div>
                     </Col>
                     <Col className="d-block d-lg-none text-end">

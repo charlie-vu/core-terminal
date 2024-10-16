@@ -1,0 +1,16 @@
+@for $i from 1 through 10 {
+  .line-clamp-#{$i} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    line-clamp: $i;
+    -webkit-line-clamp: $i;
+  }
+  .z-index-#{$i} {
+    z-index: $i !important;
+  }
+  .z-index-n#{$i} {
+    z-index: -$i !important;
+  }
+}
