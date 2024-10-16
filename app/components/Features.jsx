@@ -29,7 +29,7 @@ export default function Features() {
                 {features.map((item, index) =>
                     <Col key={`feature-${index}`}>
                         <Card className="d-flex flex-column justify-content-between border-1 border-primary rounded-5" style={{ backgroundImage: `url(${item.background})` }}>
-                            <Image src={item.icon} className="icon" />
+                            <Image src={item.icon} alt={`feature-${index}`} className="icon" />
                             <div className="mt-5">
                                 <p className="fs-2">{item.name}</p>
                                 <p className="display-5 fw-500">{item.highlight}</p>

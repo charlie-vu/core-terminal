@@ -19,7 +19,7 @@ export default function Header() {
                 <Row className="align-items-center">
                     <Col xs={6} lg={4}>
                         <Link href="/">
-                            <Image className="w-100" src="/logo/logo-text.png" />
+                            <Image className="w-100" src="/logo/logo-text.png" alt="core-terminal" />
                         </Link>
                     </Col>
                     <Col className="d-none d-lg-block">

@@ -27,7 +27,7 @@ export default function Global() {
     return (
         <section className="global py-4 py-lg-5">
             <div className="text-center">
-                <h2 className="display-1 fw-700">We're Gl<span className="text-primary">o</span>bal</h2>
+                <h2 className="display-1 fw-700">We&apos;re Gl<span className="text-primary">o</span>bal</h2>
                 <p className="text-gradient fs-1">Our global node network empowers <span className="d-inline-block">builders and users</span><br />to access free information.</p>
             </div>
             <Row className="mt-4 mt-lg-5 row-gap-4">
@@ -59,7 +59,7 @@ export default function Global() {
                 </Col>
                 <Col>
                     <Card className="p-4 bg-transparent text-white border-1 border-primary rounded-5 h-100 overflow-hidden ratio ratio-1x1 position-relative">
-                        <Image src="/global/bg-globe.png" className="position-absolute end-0 bottom-0 top-auto start-auto w-auto h-auto" />
+                        <Image src="/global/bg-globe.png" alt="globe" className="position-absolute end-0 bottom-0 top-auto start-auto w-auto h-auto" />
                     </Card>
                 </Col>
             </Row>
