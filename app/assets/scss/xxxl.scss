@@ -1,4 +1,11 @@
 // pixel-perfect figma
+
+.hero {
+  .plus {
+    display: none;
+  }
+}
+
 @media (min-width: 1800px) {
   html {
     font-size: 24px;
@@ -8,6 +15,9 @@
   }
   .column-gap-4 {
     column-gap: 48px !important;
+  }
+  .row-gap-4 {
+    row-gap: 56px !important;
   }
 
   .header {
@@ -20,12 +30,28 @@
       max-width: 1080px;
     }
     .plus {
-      display: block !important;
+      display: block;
     }
   }
-}
-.hero {
-  .plus {
-    display: none;
+  .display-1 {
+    font-size: 160px;
+  }
+
+  
+  .features {
+    padding-top: 125px !important;
+    padding-bottom: 50px !important;
+  }
+  .global {
+    padding-top: 50px !important;
+    padding-bottom: 90px !important;
+  }
+  .solutions {
+    padding-top: 90px !important;
+    padding-bottom: 175px !important;
+  }
+  .products {
+    padding-top: 175px !important;
+    padding-bottom: 96px !important;
   }
 }

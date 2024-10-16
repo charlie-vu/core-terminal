@@ -1,3 +1,4 @@
+import "./Global.scss";
 import { Card, Col, Image, Row, Stack } from "react-bootstrap";
 
 export default function Global() {
@@ -48,16 +49,16 @@ export default function Global() {
     return (
         <section className="global py-4 py-lg-5">
             <div className="text-center">
-                <h2 className="display-1 fw-700">We&apos;re Gl<span className="text-primary">o</span>bal</h2>
-                <p className="text-gradient fs-1">Our global node network empowers <span className="d-inline-block">builders and users</span><br />to access free information.</p>
+                <h2 className="display-1 fw-700">We’re Gl<span className="text-primary">o</span>bal</h2>
+                <p className="text-gradient fs-2">Our global node network empowers <span className="d-inline-block">builders and users</span><br />to access free information.</p>
             </div>
             <Row className="mt-4 mt-lg-5 row-gap-4">
-                <Col lg={5}>
-                    <Card className="p-4 bg-transparent text-white border-1 border-primary rounded-5 h-100">
-                        <h4 className="fs-1">World wide GPU access</h4>
-                        <p className="fs-5 text-primary mt-3">Access nodes from all over the world.</p>
+                <Col style={{maxWidth: 600}}>
+                    <Card className="ct-card p-4 p-lg-5 h-100">
+                        <h4 className="fs-2">World wide GPU access</h4>
+                        <p className="text-primary mt-3">Access nodes from all over the world.</p>
                         <div className="mt-4 mt-lg-5">
-                            <Stack gap={5} className="fs-4">
+                            <div className="fs-5 d-flex flex-column row-gap-4">
                                 {counts.map((item, index) =>
                                     <Row key={`country-${index}`}>
                                         <Col xs={4}>
@@ -68,23 +69,23 @@ export default function Global() {
                                         </Col>
                                     </Row>
                                 )}
-                            </Stack>
+                            </div>
                         </div>
                     </Card>
 
                 </Col>
                 <Col lg="auto">
-                    <Card className="p-4 bg-transparent text-white border-1 border-primary rounded-5 h-100 flex-row flex-lg-column" style={{ minWidth: 150 }}>
+                    <Card className="ct-card icon-card px-2 px-lg-0 py-4 py-lg-5 h-100 flex-row flex-lg-column" style={{ minWidth: 200 }}>
                         {icons.map((item, i) =>
-                            <div key={`icon-${i}`} className={`w-75 mx-auto ${item.stretch && 'flex-grow-1 d-flex align-items-end'}`}>
+                            <div key={`icon-${i}`} className={`mx-auto ${item.stretch && 'flex-grow-1 d-flex align-items-end'}`}>
                                 <Image src={item.src} alt={`icon-${i}`} className="w-100" />
                             </div>
                         )}
                     </Card>
                 </Col>
                 <Col>
-                    <Card className="p-4 bg-transparent text-white border-1 border-primary rounded-5 h-100 overflow-hidden ratio ratio-1x1 position-relative">
-                        <Image src="/global/bg-globe.png" alt="globe" className="position-absolute end-0 bottom-0 top-auto start-auto w-auto h-auto" />
+                    <Card className="ct-card p-4 h-100 overflow-hidden ratio ratio-1x1 position-relative">
+                        <Image src="/global/bg-globe.png" alt="globe" className="position-absolute end-0 bottom-0 top-auto start-auto w-auto h-auto z-index-n1" />
                     </Card>
                 </Col>
             </Row>

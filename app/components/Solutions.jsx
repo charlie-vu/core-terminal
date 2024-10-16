@@ -23,9 +23,9 @@ export default function Solutions() {
     ]
     return (
         <section className="solutions py-4 py-lg-5">
-            <div className="text-center col-lg-9 mx-auto">
-                <h4 className="display-4 fw-500">Our visual world is evolving at breakneck speed.</h4>
-                <p className="text-gradient mt-4 fs-4 fw-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div className="text-center">
+                <h4 className="display-5 fw-500 col-lg-9 mx-auto">Our visual world is evolving at breakneck speed.</h4>
+                <p className="text-gradient mt-4 fs-4 fw-500 col-lg-10 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <Row xs={1} md={2} lg={3} className="mt-4 mt-lg-5 row-gap-5">
                 {solutionList.map((item, i) =>
