@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './Products.scss';
 import { Col, Image, Row } from "react-bootstrap";
+import useScreenStore from '../store/screen';
 
 export default function Products() {
     const productList = [
@@ -31,6 +32,7 @@ export default function Products() {
         },
     ]
     const [showIframe, setShowIframe] = useState(false)
+    const screen = useScreenStore((state) => state)
     return (
         <section className="products py-4 py-lg-5">
             <div className="text-center col-lg-9 mx-auto">
@@ -51,14 +53,13 @@ export default function Products() {
                     </Col>
                 )}
                 <Col xs={12}>
-                    <div className="border border-primary rounded-5 ratio ratio-21x9 overflow-hidden">
+                    <div className='border border-primary rounded-5 ratio ratio-21x9 overflow-hidden'>
                         {showIframe === false
                             ?
                             <Image src="/products/video-thumbnail.png" className='cursor-pointer w-100 h-auto top-50 translate-middle-y' onClick={() => { setShowIframe(true) }} />
                             :
-                            <iframe id="product-video" src="https://www.youtube.com/embed/lWnZbz-a5OE?autoplay=1" title="The Core Terminal - A Futuristic  Revolutionizing AI Infrastructure and Model Exchange on Blockchain" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+                            <iframe src="https://www.youtube.com/embed/lWnZbz-a5OE?autoplay=1" title="The Core Terminal - A Futuristic  Revolutionizing AI Infrastructure and Model Exchange on Blockchain" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
                         }
-
                     </div>
                 </Col>
             </Row>

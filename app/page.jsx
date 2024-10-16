@@ -1,5 +1,9 @@
 'use client';
 import { Container } from "react-bootstrap";
+
+import useScreenStore from "./store/screen";
+import ScreenListener from "./components/helpers/ScreenListener";
+
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Global from "./components/Global";
@@ -7,6 +11,10 @@ import Solutions from "./components/Solutions";
 import Products from "./components/Products";
 
 export default function Home() {
+  // const width = useScreenStore((state) => state.width);
+  // const height = useScreenStore((state) => state.height);
+
+  // console.log(width)
   return (
     <Container>
       <Hero />
@@ -14,6 +22,8 @@ export default function Home() {
       <Global />
       <Solutions />
       <Products />
+
+      <ScreenListener />
     </Container>
   )
 }
