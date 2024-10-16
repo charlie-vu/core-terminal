@@ -1,7 +1,7 @@
 import { Card, Col, Image, Row, Stack } from "react-bootstrap";
 
 export default function Global() {
-    const count = [
+    const counts = [
         {
             country: 'Mexico',
             count: 24
@@ -22,7 +22,28 @@ export default function Global() {
             country: 'India',
             count: 55
         },
-
+    ]
+    const icons = [
+        {
+            src: '/global/icon-1.png',
+            stretch: false,
+        },
+        {
+            src: '/global/icon-2.png',
+            stretch: false,
+        },
+        {
+            src: '/global/icon-3.png',
+            stretch: false,
+        },
+        {
+            src: '/global/icon-4.png',
+            stretch: false,
+        },
+        {
+            src: '/logo/logo.png',
+            stretch: true,
+        },
     ]
     return (
         <section className="global py-4 py-lg-5">
@@ -37,7 +58,7 @@ export default function Global() {
                         <p className="fs-5 text-primary mt-3">Access nodes from all over the world.</p>
                         <div className="mt-4 mt-lg-5">
                             <Stack gap={5} className="fs-4">
-                                {count.map((item, index) =>
+                                {counts.map((item, index) =>
                                     <Row key={`country-${index}`}>
                                         <Col xs={4}>
                                             <p>{item.country}</p>
@@ -53,8 +74,12 @@ export default function Global() {
 
                 </Col>
                 <Col lg="auto">
-                    <Card className="p-4 bg-transparent text-white border-1 border-primary rounded-5 h-100" style={{minWidth: 150}}>
-
+                    <Card className="p-4 bg-transparent text-white border-1 border-primary rounded-5 h-100 flex-row flex-lg-column" style={{ minWidth: 150 }}>
+                        {icons.map((item, i) =>
+                            <div key={`icon-${i}`} className={`w-75 mx-auto ${item.stretch && 'flex-grow-1 d-flex align-items-end'}`}>
+                                <Image src={item.src} alt={`icon-${i}`} className="w-100" />
+                            </div>
+                        )}
                     </Card>
                 </Col>
                 <Col>
