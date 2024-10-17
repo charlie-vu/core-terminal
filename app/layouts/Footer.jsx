@@ -72,7 +72,7 @@ export default function Footer() {
                 <div className="border-rainbow rainbow-n45 p-5 pb-0">
                     <Row className="justify-content-between gy-4">
                         <Col lg={4}>
-                            <Image src="/logo/logo-text.png" className="col-12 co-sm-6" />
+                            <Image src="/logo/logo-text.png" alt="thecoreterminal" className="col-12 co-sm-6" />
                             <div className="mt-4">
                                 <Button variant="primary" className="rounded-pill fs-5 fw-500 px-4">
                                     <span className="dot bg-black me-3"></span>
@@ -81,19 +81,19 @@ export default function Footer() {
                             </div>
                             <div className="mt-4 d-flex gap-2">
                                 {socialList.map((item, i) =>
-                                    <Image src={item.img} alt={item.name} width={50} height={50} />
+                                    <Image key={`social-${i}`} src={item.img} alt={item.name} width={50} height={50} />
                                 )}
                             </div>
                         </Col>
                         {linkList.map((type, index) =>
-                            <Col md={6} lg={3}>
+                            <Col key={`type-${index}`} md={6} lg={3}>
                                 <div className="d-flex">
                                     <div className="dot mt-2 me-3"></div>
                                     <div>
-                                        <h4>{type.title}</h4>
+                                        <h4 className="text-primary">{type.title}</h4>
                                         <div className="mt-4">
                                             {type.itemList.map((item, i) =>
-                                                <div>
+                                                <div key={`link-${i}`}>
                                                     <Link href={item.href} className="lh-46px">{item.text}</Link>
                                                 </div>
                                             )}

@@ -63,7 +63,7 @@ export default function Products() {
                         <div className={`ratio ${vidRatio} rounded-5 overflow-hidden`}>
                             {showIframe === false
                                 ?
-                                <Image src="/products/video-thumbnail.png" className='cursor-pointer w-100 h-auto top-50 translate-middle-y' onClick={() => { setShowIframe(true) }} />
+                                <Image src="/products/video-thumbnail.png" alt="vidthumb" className='cursor-pointer w-100 h-auto top-50 translate-middle-y' onClick={() => { setShowIframe(true) }} />
                                 :
                                 <iframe src="https://www.youtube.com/embed/lWnZbz-a5OE?autoplay=1" title="The Core Terminal - A Futuristic  Revolutionizing AI Infrastructure and Model Exchange on Blockchain" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
                             }

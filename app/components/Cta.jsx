@@ -10,7 +10,7 @@ export default function Cta() {
                     Develop and train AI models and applications using Core Terminals’s decentralized GPU network. Tailored for individuals and enterprises.
                 </p>
                 <Link href="#" className="mt-5 d-block">
-                    <Image src="/ui/launch-now.png" className="col-9 col-lg-auto" />
+                    <Image src="/ui/launch-now.png" alt="launch" className="col-9 col-lg-auto" />
                 </Link>
             </div>
         </section>

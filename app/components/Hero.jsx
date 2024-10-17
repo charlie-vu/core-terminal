@@ -13,7 +13,7 @@ export default function Hero() {
             </div>
             {/* <Button variant="outline-primary" className="border-rainbow rainbow-hz rounded-pill fs-4 mt-5 px-5 py-3 col-12 col-md-auto">Features</Button> */}
             <Link href="#features">
-                <Image src="/ui/features.png" className='cursor-pointer mt-5 col-9 col-lg-auto' />
+                <Image src="/ui/features.png" alt="features" className='cursor-pointer mt-5 col-9 col-lg-auto' />
             </Link>
         </section>
     )
