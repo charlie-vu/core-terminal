@@ -3,5 +3,9 @@
         background-position: right bottom;
         background-size: cover;
         background-repeat: no-repeat;
+
+        @media (min-width: 992px) {
+            min-height: 380px;
+        }
     }
 }

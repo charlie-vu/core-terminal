@@ -20,14 +20,18 @@
       height: 160px;
     }
     .icon {
+      filter: brightness(1000%) grayscale(100%);
+
       width: 100%;
+      max-height: 35px;
+
       @media (min-width: 992px) {
-        width: auto;
-        max-width: 270px;
         max-height: 70px;
       }
-
-      filter: brightness(1000%) grayscale(100%);
+      @media (min-width: 1200px) {
+        width: auto;
+        max-width: 270px;
+      }
     }
   }
 }
