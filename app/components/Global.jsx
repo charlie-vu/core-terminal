@@ -53,7 +53,7 @@ export default function Global() {
                 <p className="text-gradient fs-2">Our global node network empowers <span className="d-inline-block">builders and users</span><br />to access free information.</p>
             </div>
             <Row className="mt-4 mt-lg-5 row-gap-4">
-                <Col style={{maxWidth: 600}}>
+                <Col md={10} lg style={{maxWidth: 600}}>
                     <Card className="ct-card p-4 p-lg-5 h-100">
                         <h4 className="fs-2">World wide GPU access</h4>
                         <p className="text-primary mt-3">Access nodes from all over the world.</p>
@@ -74,11 +74,11 @@ export default function Global() {
                     </Card>
 
                 </Col>
-                <Col lg="auto">
-                    <Card className="ct-card icon-card px-2 px-lg-0 py-4 py-lg-5 h-100 flex-row flex-lg-column" style={{ minWidth: 200 }}>
+                <Col md="2" lg="auto">
+                    <Card className="ct-card icon-card px-4 px-md-3 px-lg-4 py-4 py-lg-5 h-100 flex-row flex-md-column">
                         {icons.map((item, i) =>
-                            <div key={`icon-${i}`} className={`mx-auto ${item.stretch && 'flex-grow-1 d-flex align-items-end'}`}>
-                                <Image src={item.src} alt={`icon-${i}`} className="w-100" />
+                            <div key={`icon-${i}`} className={`mx-auto ${item.stretch && 'flex-grow-1 d-flex align-items-end justify-content-end'}`}>
+                                <Image src={item.src} alt={`icon-${i}`} className="icon" />
                             </div>
                         )}
                     </Card>

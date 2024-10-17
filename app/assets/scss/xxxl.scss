@@ -6,7 +6,7 @@
   }
 }
 
-@media (min-width: 1800px) {
+@include media-breakpoint-up(xxxl) {
   html {
     font-size: 24px;
   }

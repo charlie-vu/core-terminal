@@ -10,7 +10,7 @@ export default function Hero() {
                 <p>Technologies.</p>
                 
             </div>
-            {/* <Button variant="outline-primary" className="border-2 rounded-pill fs-4 mt-5 px-5 py-3 col-12 col-md-auto">Features</Button> */}
+            {/* <Button variant="outline-primary" className="border-rainbow rainbow-hz rounded-pill fs-4 mt-5 px-5 py-3 col-12 col-md-auto">Features</Button> */}
             <Image src="/ui/features.png" className='cursor-pointer mt-5 col-12 col-lg-auto' />
         </section>
     )

@@ -12,7 +12,7 @@ body {
   background-position: left top;
   background-repeat: no-repeat;
 
-  @media (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     background-size: contain;
   }
 }
@@ -113,4 +113,49 @@ a.active {
 .container {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.border-rainbow {
+  // border-image-source: linear-gradient(90deg, white, var(--bs-primary));
+  // border-image-slice: 1;
+
+  background: black;
+  color: white;
+
+  position: relative;
+  background-clip: padding-box;
+
+  border-style: solid;
+  border-color: transparent;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+
+    // Default vertical
+    background-image: linear-gradient(#515dff, var(--bs-primary));
+  }
+
+  &.rainbow-hz {
+    &:before {
+      background-image: linear-gradient(-90deg, #515dff, var(--bs-primary));
+    }
+  }
+  &.rainbow-45 {
+    &:before {
+      background-image: linear-gradient(45deg, #515dff, var(--bs-primary));
+    }
+  }
+  &.rainbow-n45 {
+    &:before {
+      background-image: linear-gradient(-45deg, #515dff, var(--bs-primary));
+    }
+  }
 }

@@ -25,10 +25,10 @@ export default function Features() {
     ]
     return (
         <section className="features py-3 py-lg-5">
-            <Row xs={1} lg={3} className="row-gap-4 gx-0">
+            <Row xs={1} lg={3} className="row-gap-4">
                 {features.map((item, index) =>
                     <Col key={`feature-${index}`}>
-                        <Card className="d-flex flex-column justify-content-between p-5" style={{ backgroundImage: `url(${item.background})` }}>
+                        <Card className="border-rainbow rainbow-45 rounded-5 d-flex flex-column justify-content-between p-5" style={{ backgroundImage: `url(${item.background})` }}>
                             <Image src={item.icon} alt={`feature-${index}`} className="icon" />
                             <div className="mt-5">
                                 <p className="fs-4">{item.name}</p>

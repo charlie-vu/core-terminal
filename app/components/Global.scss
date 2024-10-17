@@ -6,8 +6,20 @@
     background-image: url("/ui/rect-10.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    &.icon-card{
-        background-image: url('/ui/icon-frame.png');
+    &.icon-card {
+      background-image: url("/ui/icon-frame.png");
+      .icon {
+        width: 48px;
+        height: 48px;
+        @media (min-width: 992px) {
+          width: 64px;
+          height: 64px;
+        }
+        @media (min-width: 1800px) {
+          width: 110px;
+          height: 110px;
+        }
+      }
     }
   }
 }
