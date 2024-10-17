@@ -13,6 +13,7 @@
 // });
 
 import "./assets/scss/app.scss";
+import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 
 const metaInfo = {
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

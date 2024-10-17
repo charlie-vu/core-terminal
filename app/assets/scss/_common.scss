@@ -89,7 +89,10 @@ a.active {
   vertical-align: middle;
   background-color: var(--bs-primary);
   border-radius: 50%;
-  animation: flash 1s infinite;
+
+  &.blink {
+    animation: flash 1s infinite;
+  }
   @keyframes flash {
     0%,
     50%,

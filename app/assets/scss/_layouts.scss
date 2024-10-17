@@ -1,7 +1,28 @@
 .header {
-  .nav-item{
-    &:hover{
-        color: var(--bs-primary);
+  .nav-item {
+    &:hover {
+      color: var(--bs-primary);
+    }
+  }
+}
+
+.footer {
+  .border-rainbow {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    &::before {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 1800px) {
+    margin-right: 150px;
+    padding: 150px 150px 100px 36px;
+
+    .border-rainbow {
+      border-top-left-radius: 0;
+      &::before {
+        margin-left: 0;
+      }
     }
   }
 }

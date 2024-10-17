@@ -14,7 +14,7 @@ export default function Header() {
     }, [])
 
     return (
-        <div className="header mt-5">
+        <header className="header mt-5">
             <Container>
                 <Row xs={2} className="align-items-center">
                     <Col>
@@ -28,15 +28,15 @@ export default function Header() {
                             <Link className="nav-item" href="#product">Product</Link>
                             {/* <Link className="nav-item" href="#tech">Technology</Link> */}
                             <Link className="nav-item" href="#contact">Contact</Link>
-                            <div className="dot"></div>
+                            <div className="dot blink"></div>
                             <Button variant="outline-primary py-2 px-4 px-xl-5 border-2">Launch App</Button>
                         </div>
                     </Col>
                     <Col className="d-block d-lg-none text-end">
-                        <Button variant="outline-primary border-2"><span className="dot d-inline-block me-3"></span>Launch App</Button>
+                        <Button variant="outline-primary border-2"><span className="dot blink d-inline-block me-3"></span>Launch App</Button>
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </header>
     );
 }
