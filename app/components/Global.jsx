@@ -53,8 +53,8 @@ export default function Global() {
                 <p className="text-gradient fs-2">Our global node network empowers <span className="d-inline-block">builders and users</span><br />to access free information.</p>
             </div>
             <Row className="mt-4 mt-lg-5 row-gap-4">
-                <Col md={10} lg style={{maxWidth: 600}}>
-                    <Card className="ct-card p-4 p-lg-5 h-100">
+                <Col md={10} lg style={{ maxWidth: 600 }}>
+                    <Card className="border-rainbow rainbow-45 rounded-5 ct-card p-4 p-lg-5 h-100">
                         <h4 className="fs-2">World wide GPU access</h4>
                         <p className="text-primary mt-3">Access nodes from all over the world.</p>
                         <div className="mt-4 mt-lg-5">
@@ -75,7 +75,7 @@ export default function Global() {
 
                 </Col>
                 <Col md="2" lg="auto">
-                    <Card className="ct-card icon-card px-4 px-md-3 px-lg-4 py-4 py-lg-5 h-100 flex-row flex-md-column">
+                    <Card className="border-rainbow rainbow-45 rounded-5 ct-card icon-card px-4 px-md-3 px-lg-4 py-4 py-lg-5 h-100 flex-row flex-md-column">
                         {icons.map((item, i) =>
                             <div key={`icon-${i}`} className={`mx-auto ${item.stretch && 'flex-grow-1 d-flex align-items-end justify-content-end'}`}>
                                 <Image src={item.src} alt={`icon-${i}`} className="icon" />
@@ -84,8 +84,10 @@ export default function Global() {
                     </Card>
                 </Col>
                 <Col>
-                    <Card className="ct-card p-4 h-100 overflow-hidden ratio ratio-1x1 position-relative" style={{borderRadius: 50}}>
-                        <Image src="/global/bg-globe.png" alt="globe" className="position-absolute end-0 bottom-0 top-auto start-auto w-auto h-auto z-index-n1" />
+                    <Card className="border-rainbow rainbow-45 rounded-5 h-100">
+                        <div className="rounded-5 overflow-hidden ratio ratio-1x1 h-100">
+                            <Image src="/global/bg-globe.png" alt="globe" className="h-100 w-auto end-0 bottom-0 top-auto start-auto" />
+                        </div>
                     </Card>
                 </Col>
             </Row>

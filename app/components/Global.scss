@@ -1,13 +1,13 @@
 .global {
   .ct-card {
-    background-color: transparent;
-    color: white;
+    // background-color: transparent;
+    // color: white;
 
-    background-image: url("/ui/rect-10.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    // background-image: url("/ui/rect-10.png");
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
     &.icon-card {
-      background-image: url("/ui/icon-frame.png");
+      // background-image: url("/ui/icon-frame.png");
       .icon {
         width: 48px;
         height: 48px;
