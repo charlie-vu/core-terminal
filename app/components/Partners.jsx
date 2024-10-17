@@ -3,25 +3,25 @@ import "./Partners.scss"
 export default function Partners() {
     const partnerList = [
         {
+            name: 'aws',
+            img: '/partners/aws.png',
+        },
+        {
             name: 'binstarter',
-            img: '/partners/binstarter.png',
+            img: '/partners/binstarter-white.png',
         },
         {
-            name: 'nvidia',
-            img: '/partners/nvidia.png',
+            name: 'lion',
+            img: '/partners/lion.png',
         },
         {
-            name: 'asus',
-            img: '/partners/asus.png',
+            name: 'oneshield',
+            img: '/partners/oneshield.png',
         },
-        {
-            name: 'siemens',
-            img: '/partners/siemens.png',
-        },
-        {
-            name: 'samsung',
-            img: '/partners/samsung.png',
-        },
+        // {
+        //     name: 'samsung',
+        //     img: '/partners/samsung.png',
+        // },
     ]
     return (
         <section className="partners py-4 py-lg-5">
@@ -30,9 +30,9 @@ export default function Partners() {
             <Row className="mt-4 mt-lg-5 mt-xxl-5 justify-content-center g-3 g-lg-4 g-xxl-4">
                 {partnerList.map((item, i) =>
                     <Col key={`partner-${i}`} xs={6} md={4}>
-                        <div className="partner-item border-rainbow rainbow-hz rounded-4 text-center">
+                        <div className="partner-item border-rainbow rainbow-hz rounded-4 text-center h-100 d-flex flex-center">
                             <div className="rounded-3 overflow-hidden p-3 p-md-4 px-lg-5 py-xxl-4">
-                                <Image src={item.img} alt={item.name} className="col-12 col-xxl-auto" />
+                                <Image src={item.img} alt={item.name} className="icon" />
                             </div>
                         </div>
                     </Col>

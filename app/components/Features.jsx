@@ -13,7 +13,7 @@ export default function Features() {
         {
             background: '/features/bg-2.png',
             icon: '/features/icon-2.png',
-            name: 'Active Nodes',
+            name: 'Active\nNodes',
             highlight: '1000+',
         },
         {
@@ -31,8 +31,8 @@ export default function Features() {
                         <Card className="border-rainbow rainbow-45 rounded-5 p-5 d-flex flex-column justify-content-between h-100" style={{ backgroundImage: `url(${item.background})` }}>
                             <Image src={item.icon} alt={`feature-${index}`} className="icon" />
                             <div className="card-text flex-grow-1 d-flex flex-column justify-content-end">
-                                <p className="fs-4">{item.name}</p>
-                                <p className="display-4 fw-500">{item.highlight}</p>
+                                <p className="fs-4 col-lg-10">{item.name}</p>
+                                <p className="display-4 fw-500 mt-2">{item.highlight}</p>
                             </div>
                         </Card>
                     </Col>

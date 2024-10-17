@@ -15,7 +15,19 @@
   }
   .partner-item {
     @media (min-width: 1800px) {
-    //   min-width: 510px;
+      //   min-width: 510px;
+      width: 510px;
+      height: 160px;
+    }
+    .icon {
+      width: 100%;
+      @media (min-width: 992px) {
+        width: auto;
+        max-width: 270px;
+        max-height: 70px;
+      }
+
+      filter: brightness(1000%) grayscale(100%);
     }
   }
 }
