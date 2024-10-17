@@ -10,20 +10,32 @@ import Global from "./components/Global";
 import Solutions from "./components/Solutions";
 import Products from "./components/Products";
 import Partners from "./components/Partners";
+import Cta from "./components/Cta";
+import DecorLine from "./components/ui/DecorLine";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   // const width = useScreenStore((state) => state.width);
   // const height = useScreenStore((state) => state.height);
 
-  // console.log(width)
+  const screen = useScreenStore((state) => state)
+  // console.log(screen.gt.md)
+  const [decorThickness, setDecorThickness] = useState(18)
+  useEffect(() => {
+    screen.gt.md ? setDecorThickness(24) : setDecorThickness(18)
+  }, [screen.gt.md])
   return (
     <Container>
       <Hero />
       <Features />
       <Global />
       <Solutions />
+
+      <DecorLine thickness={decorThickness} />
+
       <Products />
       <Partners />
+      <Cta />
 
       <ScreenListener />
     </Container>
