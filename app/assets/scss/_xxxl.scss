@@ -36,11 +36,19 @@
   .display-1 {
     font-size: 160px !important;
   }
-  .fs-2{
+  .fs-2 {
     font-size: 54px !important;
   }
-  .mt-xxl-5{
+  .mt-xxl-5 {
     margin-top: 125px !important;
+  }
+  .py-xxl-4 {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+  .g-xxl-4{
+    --bs-gutter-y: 40px !important;
+    --bs-gutter-x: 40px !important;
   }
 
   // Section spacings
@@ -60,11 +68,11 @@
     padding-top: 175px !important;
     padding-bottom: 96px !important;
   }
-  .partners{
+  .partners {
     padding-top: 124px !important;
     padding-bottom: 135px !important;
   }
-  .cta{
+  .cta {
     padding-top: 140px !important;
     padding-bottom: 225px !important;
   }
