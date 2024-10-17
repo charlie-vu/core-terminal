@@ -40,7 +40,7 @@ export default function Products() {
         // console.log(vidRatio)
     }, [screen.width])
     return (
-        <section className="products py-4 py-lg-5">
+        <section className="products py-5">
             <div className="text-center col-lg-9 mx-auto">
                 <Image src='/products/124x.png' alt="124x" className="w-100" />
                 <h4 className="display-4 fw-500">124x more GPUs<br />than all the GPUs in existence</h4>

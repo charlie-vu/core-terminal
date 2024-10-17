@@ -47,7 +47,7 @@ export default function Global() {
         },
     ]
     return (
-        <section className="global py-4 py-lg-5">
+        <section className="global py-5">
             <div className="text-center">
                 <h2 className="display-1 fw-700">We’re Gl<span className="text-primary">o</span>bal</h2>
                 <p className="text-gradient fs-2">Our global node network empowers <span className="d-inline-block">builders and users</span><br />to access free information.</p>

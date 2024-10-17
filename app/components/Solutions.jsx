@@ -22,14 +22,14 @@ export default function Solutions() {
         },
     ]
     return (
-        <section className="solutions py-4 py-lg-5">
+        <section className="solutions py-5">
             <div className="text-center">
                 <h4 className="display-5 fw-500">
                     Unlocking <span className="d-inline-block">AI Potential with</span> <span className="d-inline-block">Collaborative and <span className="d-inline-block">Ready-to-Use Models</span></span>
                 </h4>
                 {/* <p className="text-gradient mt-4 fs-4 fw-500 col-lg-10 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> */}
             </div>
-            <Row xs={1} md={2} lg={3} className="mt-4 mt-lg-5 row-gap-5">
+            <Row xs={1} md={2} lg={3} className="mt-5 row-gap-5">
                 {solutionList.map((item, i) =>
                     <Col key={`solution-${i}`} className="d-flex flex-column">
                         <div className="border-rainbow rainbow-45 rounded-5">

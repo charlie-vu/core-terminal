@@ -24,7 +24,7 @@ export default function Partners() {
         // },
     ]
     return (
-        <section className="partners py-4 py-lg-5">
+        <section className="partners py-5">
             <div className="bg"></div>
             <h4 className="text-center display-5 fw-500">Partners & <span className="text-primary">Investors</span></h4>
             <Row className="mt-4 mt-lg-5 mt-xxl-5 justify-content-center g-3 g-lg-4 g-xxl-4">
