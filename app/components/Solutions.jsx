@@ -30,13 +30,16 @@ export default function Solutions() {
             <Row xs={1} md={2} lg={3} className="mt-4 mt-lg-5 row-gap-5">
                 {solutionList.map((item, i) =>
                     <Col key={`solution-${i}`} className="d-flex flex-column">
-                        <div className="ratio ratio-1x1 border border-primary rounded-5 d-none d-lg-block">
-                            <Image src={item.img} alt={`solution-${i}`} />
+                        <div className="border-rainbow rainbow-45 rounded-5">
+                            <div className="ratio ratio-1x1">
+                                <Image src={item.img} alt={`solution-${i}`} />
+                            </div>
                         </div>
-                        <div className="border border-primary rounded-5 px-4 px-lg-5 py-5 mt-3 mt-lg-4 flex-grow-1 d-flex flex-column justify-content-between">
-                            <h4 className="fs-1 fw-500 text-gradient vertical">{item.title}</h4>
+
+                        <div className="border-rainbow rounded-5 px-4 px-lg-5 py-5 mt-3 mt-lg-4 flex-grow-1 d-flex flex-column justify-content-between">
+                            <h4 className="fs-2 fw-500 text-gradient vertical">{item.title}</h4>
                             <div className="mt-4">
-                                <p className="fs-5">{item.content}</p>
+                                <p>{item.content}</p>
                                 <p className="mt-4 fs-4 text-primary fw-500"><span className="dot me-3"></span>{item.category}</p>
                             </div>
                         </div>
