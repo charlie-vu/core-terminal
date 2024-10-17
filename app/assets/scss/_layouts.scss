@@ -14,9 +14,26 @@
       margin-bottom: 0;
     }
   }
-  @media (min-width: 1800px) {
+  .link-type {
+    min-width: 200px;
+  }
+  a:hover {
+    color: var(--bs-primary);
+  }
+
+  @media (min-width: 1200px) {
     margin-right: 150px;
-    padding: 150px 150px 100px 36px;
+
+    .container {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    .wrapper {
+      padding-left: 150px !important;
+      padding-right: 100px !important;
+    }
 
     .border-rainbow {
       border-top-left-radius: 0;
@@ -24,8 +41,8 @@
         margin-left: 0;
       }
     }
-  }
-  a:hover{
-    color: var(--bs-primary);
+    .link-item{
+      line-height: 46px;
+    }
   }
 }

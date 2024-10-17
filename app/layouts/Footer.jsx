@@ -69,12 +69,12 @@ export default function Footer() {
     return (
         <footer className="footer mt-5">
             <Container className="">
-                <div className="border-rainbow rainbow-n45 p-5 pb-0">
-                    <Row className="justify-content-between gy-4">
+                <div className="wrapper border-rainbow rainbow-n45 p-5 px-4 px-md-5 pb-0">
+                    <Row className="justify-content-between gy-5">
                         <Col lg={4}>
-                            <Image src="/logo/logo-text.png" alt="thecoreterminal" className="col-12 co-sm-6" />
+                            <Image src="/logo/logo-text.png" alt="thecoreterminal" className="col-12 col-md-9 col-lg-12" />
                             <div className="mt-4">
-                                <Button variant="primary" className="rounded-pill fs-5 fw-500 px-4">
+                                <Button variant="primary" className="rounded-pill fw-500 px-4">
                                     <span className="dot bg-black me-3"></span>
                                     All services are online
                                 </Button>
@@ -86,15 +86,15 @@ export default function Footer() {
                             </div>
                         </Col>
                         {linkList.map((type, index) =>
-                            <Col key={`type-${index}`} md={6} lg={3}>
+                            <Col key={`type-${index}`} md={6} lg="auto" className="link-type">
                                 <div className="d-flex">
                                     <div className="dot mt-2 me-3"></div>
                                     <div>
                                         <h4 className="text-primary">{type.title}</h4>
-                                        <div className="mt-4">
+                                        <div className="link-item mt-4">
                                             {type.itemList.map((item, i) =>
                                                 <div key={`link-${i}`}>
-                                                    <Link href={item.href} className="lh-46px">{item.text}</Link>
+                                                    <Link href={item.href} className="lh-lg">{item.text}</Link>
                                                 </div>
                                             )}
                                         </div>
