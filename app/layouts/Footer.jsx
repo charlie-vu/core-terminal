@@ -104,8 +104,8 @@ export default function Footer() {
                         )}
 
                     </Row>
-                    <div className="py-4 border-top border-primary mt-4 d-flex justify-content-between flex-wrap">
-                        <p>Core Terminal All rights reserved. Copyright © 2024</p>
+                    <div className="py-4 border-top border-primary mt-4 d-flex justify-content-between flex-wrap gap-3">
+                        <p>Core Terminal All rights reserved. <span className="d-inline-block">Copyright © 2024</span></p>
                         <div className="d-flex gap-4">
                             <Link href="#">Terms Of Service</Link>
                             <p>|</p>
