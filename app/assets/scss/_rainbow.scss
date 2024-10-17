@@ -2,14 +2,15 @@
   // border-image-source: linear-gradient(90deg, white, var(--bs-primary));
   // border-image-slice: 1;
 
+  $border-width: 1px;
+
   background: black;
   color: white;
 
   position: relative;
   background-clip: padding-box;
 
-  border-style: solid;
-  border-color: transparent;
+  border: $border-width solid transparent;
 
   &:before {
     content: "";
@@ -19,7 +20,7 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -2px;
+    margin: -$border-width;
     border-radius: inherit;
 
     // Default vertical
