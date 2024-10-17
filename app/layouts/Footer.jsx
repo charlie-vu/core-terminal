@@ -5,15 +5,18 @@ export default function Footer() {
     const socialList = [
         {
             name: 'twitter',
-            img: '/ui/twitter.png'
+            img: '/ui/twitter.png',
+            url: '#',
         },
         {
             name: 'telegram',
-            img: '/ui/telegram.png'
+            img: '/ui/telegram.png',
+            url: '#',
         },
         {
             name: 'medium',
-            img: '/ui/medium.png'
+            img: '/ui/medium.png',
+            url: '#',
         },
     ]
     const linkList = [
@@ -72,7 +75,7 @@ export default function Footer() {
                 <div className="wrapper border-rainbow rainbow-n45 p-5 px-4 px-md-5 pb-0">
                     <Row className="justify-content-between gy-5">
                         <Col lg={4}>
-                            <Image src="/logo/logo-text.png" alt="thecoreterminal" className="col-12 col-md-9 col-lg-12" />
+                            <Image src="/logo/logo-text.png" alt="thecoreterminal" className="logo w-100" />
                             <div className="mt-4">
                                 <Button variant="primary" className="rounded-pill fw-500 px-4">
                                     <span className="dot bg-black me-3"></span>
@@ -81,24 +84,21 @@ export default function Footer() {
                             </div>
                             <div className="mt-4 d-flex gap-2">
                                 {socialList.map((item, i) =>
-                                    <Image key={`social-${i}`} src={item.img} alt={item.name} width={50} height={50} />
+                                    <Link key={`social-${i}`} href={item.url}>
+                                        <Image src={item.img} alt={item.name} width={50} height={50} />
+                                    </Link>
                                 )}
                             </div>
                         </Col>
                         {linkList.map((type, index) =>
                             <Col key={`type-${index}`} md={6} lg="auto" className="link-type">
-                                <div className="d-flex">
-                                    <div className="dot mt-2 me-3"></div>
-                                    <div>
-                                        <h4 className="text-primary">{type.title}</h4>
-                                        <div className="link-item mt-4">
-                                            {type.itemList.map((item, i) =>
-                                                <div key={`link-${i}`}>
-                                                    <Link href={item.href} className="lh-lg">{item.text}</Link>
-                                                </div>
-                                            )}
+                                <h4 className="link-title text-primary">{type.title}</h4>
+                                <div className="mt-4">
+                                    {type.itemList.map((item, i) =>
+                                        <div key={`link-${i}`}>
+                                            <Link href={item.href} className="lh-lg text-gradient">{item.text}</Link>
                                         </div>
-                                    </div>
+                                    )}
                                 </div>
                             </Col>
                         )}
