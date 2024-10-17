@@ -7,25 +7,29 @@
     background-position: center;
     color: white;
 
+    min-height: 400px;
+
     @media (min-width: 992px) {
       min-height: 540px;
     }
     @media (min-width: 1800px) {
       min-height: 662px;
-      padding: 100px !important;
+      padding: 96px !important;
     }
     .icon {
-      width: 72px;
-      height: 72px;
-      @media (min-width: 992px) {
+      width: 100px;
+      height: 100px;
+      @media (min-width: 1800px) {
         width: 146px;
         height: 146px;
       }
-
       // @include media-breakpoint-up(lg) {
       //   width: 146px;
       //   height: 146px;
       // }
+    }
+    .card-text {
+      margin-top: 107px !important;
     }
   }
 }

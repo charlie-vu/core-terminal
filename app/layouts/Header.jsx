@@ -16,17 +16,17 @@ export default function Header() {
     return (
         <div className="header mt-5">
             <Container>
-                <Row className="align-items-center">
-                    <Col xs={6} lg={4}>
+                <Row xs={2} className="align-items-center">
+                    <Col>
                         <Link href="/">
-                            <Image className="w-100 logo-text" src="/logo/logo-text.png" alt="core-terminal" />
+                            <Image className="logo-text col-12 col-lg-8 col-xxxl-auto" src="/logo/logo-text.png" alt="core-terminal" />
                         </Link>
                     </Col>
                     <Col className="d-none d-lg-block">
-                        <div className="d-flex column-gap-4 align-items-center justify-content-end">
+                        <div className="d-flex align-items-center justify-content-between">
                             <Link className="nav-item" href="/">Company</Link>
                             <Link className="nav-item" href="#product">Product</Link>
-                            <Link className="nav-item" href="#tech">Technology</Link>
+                            {/* <Link className="nav-item" href="#tech">Technology</Link> */}
                             <Link className="nav-item" href="#contact">Contact</Link>
                             <div className="dot"></div>
                             <Button variant="outline-primary py-2 px-4 px-xl-5 border-2">Launch App</Button>

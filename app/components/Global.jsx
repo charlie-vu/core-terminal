@@ -73,7 +73,7 @@ export default function Global() {
 
                 </Col>
                 <Col md="2" lg="auto">
-                    <Card className="border-rainbow rainbow-45 rounded-5 ct-card icon-card px-4 px-md-3 px-lg-4 py-4 py-lg-5 h-100 flex-row flex-md-column">
+                    <Card className="border-rainbow rainbow-45 rounded-5 ct-card icon-card px-4 px-md-3 px-lg-4 py-3 py-lg-5 h-100 flex-row flex-md-column gap-2 gap-lg-3">
                         {icons.map((item, i) =>
                             <div key={`icon-${i}`} className={`mx-auto ${item.stretch && 'flex-grow-1 d-flex align-items-end justify-content-end'}`}>
                                 <Image src={item.src} alt={`icon-${i}`} className="icon" />
