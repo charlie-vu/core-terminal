@@ -57,19 +57,17 @@ export default function Global() {
                     <Card className="border-rainbow rainbow-45 rounded-5 ct-card p-4 p-lg-5 h-100">
                         <h4 className="fs-2">World wide GPU access</h4>
                         <p className="text-primary mt-3">Access nodes from all over the world.</p>
-                        <div className="mt-4 mt-lg-5">
-                            <div className="fs-5 d-flex flex-column row-gap-4">
-                                {counts.map((item, index) =>
-                                    <Row key={`country-${index}`}>
-                                        <Col xs={4}>
-                                            <p>{item.country}</p>
-                                        </Col>
-                                        <Col>
-                                            <p><span className="text-primary">{item.count}</span> Active GPUs</p>
-                                        </Col>
-                                    </Row>
-                                )}
-                            </div>
+                        <div className="mt-4 mt-lg-5 h-100 fs-5 d-flex flex-column justify-content-between row-gap-4">
+                            {counts.map((item, index) =>
+                                <Row key={`country-${index}`}>
+                                    <Col xs={4}>
+                                        <p>{item.country}</p>
+                                    </Col>
+                                    <Col>
+                                        <p><span className="text-primary">{item.count}</span> Active GPUs</p>
+                                    </Col>
+                                </Row>
+                            )}
                         </div>
                     </Card>
 
@@ -83,7 +81,7 @@ export default function Global() {
                         )}
                     </Card>
                 </Col>
-                <Col>
+                <Col lg xl={5}>
                     <Card className="border-rainbow rainbow-45 rounded-5 h-100">
                         <div className="rounded-5 overflow-hidden ratio ratio-1x1 h-100">
                             <Image src="/global/bg-globe.png" alt="globe" className="h-100 w-auto end-0 bottom-0 top-auto start-auto" />

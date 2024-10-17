@@ -9,6 +9,7 @@ import Features from "./components/Features";
 import Global from "./components/Global";
 import Solutions from "./components/Solutions";
 import Products from "./components/Products";
+import Partners from "./components/Partners";
 
 export default function Home() {
   // const width = useScreenStore((state) => state.width);
@@ -22,6 +23,7 @@ export default function Home() {
       <Global />
       <Solutions />
       <Products />
+      <Partners />
 
       <ScreenListener />
     </Container>

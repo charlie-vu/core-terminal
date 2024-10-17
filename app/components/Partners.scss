@@ -1,0 +1,21 @@
+.partners {
+  // background-image: url('/partners/bg-partners.png');
+  position: relative;
+  .bg {
+    background-image: url("/partners/bg-partners.png");
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: -10;
+  }
+  .partner-item {
+    @media (min-width: 1800px) {
+      min-width: 510px;
+    }
+  }
+}

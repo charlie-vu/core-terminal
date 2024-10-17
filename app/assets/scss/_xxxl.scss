@@ -39,8 +39,11 @@
   .fs-2{
     font-size: 54px !important;
   }
+  .mt-xxl-5{
+    margin-top: 125px !important;
+  }
 
-  
+  // Section spacings
   .features {
     padding-top: 125px !important;
     padding-bottom: 50px !important;
@@ -56,5 +59,13 @@
   .products {
     padding-top: 175px !important;
     padding-bottom: 96px !important;
+  }
+  .partners{
+    padding-top: 124px !important;
+    padding-bottom: 135px !important;
+  }
+  .cta{
+    padding-top: 140px !important;
+    padding-bottom: 225px !important;
   }
 }
