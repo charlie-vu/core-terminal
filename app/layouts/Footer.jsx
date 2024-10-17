@@ -78,7 +78,7 @@ export default function Footer() {
                             <Image src="/logo/logo-text.png" alt="thecoreterminal" className="logo w-100" />
                             <div className="mt-4">
                                 <Button variant="primary" className="rounded-pill fw-500 px-4">
-                                    <span className="dot bg-black me-3"></span>
+                                    <span className="dot blink bg-black me-3"></span>
                                     All services are online
                                 </Button>
                             </div>
