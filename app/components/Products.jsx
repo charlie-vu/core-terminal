@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Products.scss';
 import { Col, Image, Row } from "react-bootstrap";
 import useScreenStore from '../store/screen';
@@ -33,16 +33,22 @@ export default function Products() {
     ]
     const [showIframe, setShowIframe] = useState(false)
     const screen = useScreenStore((state) => state)
+
+    const [vidRatio, setVidRatio] = useState('ratio-16x9')
+    useEffect(()=>{
+        screen.width >= 1200 ? setVidRatio('ratio-21x9') : setVidRatio('ratio-16x9')
+        // console.log(vidRatio)
+    }, [screen.width])
     return (
         <section className="products py-4 py-lg-5">
             <div className="text-center col-lg-9 mx-auto">
                 <Image src='/products/124x.png' alt="124x" className="w-100" />
                 <h4 className="display-4 fw-500">124x more GPUs<br />than all the GPUs in existence</h4>
-                <p className="text-gradient mt-4 fs-4 fw-500">Turn your GPU into a money-making machine with Core Terminal</p>
+                <p className="text-gradient mt-4 fs-4 fw-500">Turn your GPU into a money-making machine with <span className='d-inline-block'>Core Terminal</span></p>
             </div>
             <Row className="mt-4 mt-lg-5 row-gap-4">
                 {productList.map((item, i) =>
-                    <Col lg={item.background ? 8 : 4} key={`product-${i}`}>
+                    <Col lg={6} xl={item.background ? 8 : 4} key={`product-${i}`}>
                         <div className="item p-4 p-lg-5 border border-primary rounded-5 h-100 d-flex flex-column justify-content-between" style={{ backgroundImage: `url(${item.background})` }}>
                             <div className="card-text">
                                 <h4 className="text-gradient display-5">{item.title}</h4>
@@ -53,7 +59,7 @@ export default function Products() {
                     </Col>
                 )}
                 <Col xs={12}>
-                    <div className='border border-primary rounded-5 ratio ratio-21x9 overflow-hidden'>
+                    <div className={`border border-primary rounded-5 ratio ${vidRatio} overflow-hidden`}>
                         {showIframe === false
                             ?
                             <Image src="/products/video-thumbnail.png" className='cursor-pointer w-100 h-auto top-50 translate-middle-y' onClick={() => { setShowIframe(true) }} />
