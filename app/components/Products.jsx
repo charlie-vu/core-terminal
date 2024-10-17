@@ -50,8 +50,8 @@ export default function Products() {
                 {productList.map((item, i) =>
                     <Col lg={6} xl={item.background ? 8 : 4} key={`product-${i}`}>
                         <div className="item p-4 p-lg-5 border border-primary rounded-5 h-100 d-flex flex-column justify-content-between" style={{ backgroundImage: `url(${item.background})` }}>
-                            <div className="card-text">
-                                <h4 className="text-gradient display-5">{item.title}</h4>
+                            <div className={`card-text ${item.background ? 'col-xl-6' : ''}`}>
+                                <h4 className="text-gradient fs-1">{item.title}</h4>
                                 <p className="mt-4 fs-5">{item.content}</p>
                             </div>
                             <p className="mt-4 mt-lg-5 text-primary fs-4 fw-500"><span className='dot me-3'></span>{item.category}</p>
