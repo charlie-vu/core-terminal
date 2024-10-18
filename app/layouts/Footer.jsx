@@ -71,8 +71,8 @@ export default function Footer() {
     ]
     return (
         <footer className="footer mt-5">
-            <Container className="">
-                <div className="wrapper border-rainbow rainbow-n45 p-4 p-md-5 pb-0">
+            <Container>
+                <div className="wrapper border-rainbow rainbow-n45 p-4 p-md-5 pb-0 pb-md-0">
                     <Row className="justify-content-between gy-5">
                         <Col lg={4}>
                             <Image src="/logo/logo-text.png" alt="thecoreterminal" className="logo w-100" />
