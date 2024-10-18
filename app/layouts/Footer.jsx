@@ -72,7 +72,7 @@ export default function Footer() {
     return (
         <footer className="footer mt-5">
             <Container className="">
-                <div className="wrapper border-rainbow rainbow-n45 p-5 px-4 px-md-5 pb-0">
+                <div className="wrapper border-rainbow rainbow-n45 p-4 p-md-5 pb-0">
                     <Row className="justify-content-between gy-5">
                         <Col lg={4}>
                             <Image src="/logo/logo-text.png" alt="thecoreterminal" className="logo w-100" />
@@ -106,7 +106,7 @@ export default function Footer() {
                     </Row>
                     <div className="py-4 border-top border-primary mt-4 d-flex justify-content-between flex-wrap gap-3">
                         <p>Core Terminal All rights reserved. <span className="d-inline-block">Copyright © 2024</span></p>
-                        <div className="d-flex gap-4">
+                        <div className="d-flex column-gap-3 flex-wrap">
                             <Link href="#">Terms Of Service</Link>
                             <p>|</p>
                             <Link href="#">Privacy Policy</Link>
