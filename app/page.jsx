@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 
 import useScreenStore from "./store/screen";
@@ -12,7 +13,7 @@ import Products from "./components/Products";
 import Partners from "./components/Partners";
 import Cta from "./components/Cta";
 import DecorLine from "./components/ui/DecorLine";
-import { useEffect, useState } from "react";
+import Sidebar from "./layouts/Sidebar";
 
 export default function Home() {
   // const width = useScreenStore((state) => state.width);
@@ -37,6 +38,7 @@ export default function Home() {
       <Partners />
       <Cta />
 
+      <Sidebar />
       <ScreenListener />
     </Container>
   )

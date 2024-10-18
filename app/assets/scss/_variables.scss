@@ -1,6 +1,5 @@
 $theme-colors: (
-  'primary': #03EEA3,
-  
+  "primary": #03eea3,
 );
 $grid-breakpoints: (
   xs: 0,
@@ -9,6 +8,10 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  
+
   xxxl: 1800px,
 );
+$offcanvas-bg-color: rgba(0, 0, 0, 0.8);
+$offcanvas-color: white;
+$offcanvas-padding-y: 3rem;
+$offcanvas-padding-x: 2rem;
